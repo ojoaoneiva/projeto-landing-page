@@ -468,3 +468,258 @@ main {
     width: 4vw;
 }
 
+
+/* ---------------RESPONSIVIDADE------------ */
+
+@media screen and (max-device-width: 1000px) and (min-device-width: 800px) {
+    #QUEMSOMOS {
+        height: 160vw;
+        max-height: 1200px;
+    }
+
+    #quatro-vantagens {
+        padding: 10px;
+        gap: 10px;
+        justify-content: space-around;
+    }
+
+    #quatro-vantagens figure div {
+        overflow: hidden;
+        width: 21vw;
+        height: 21vw;
+    }
+
+    #quatro-vantagens figure {
+        width: 21vw;
+        padding: 0;
+    }
+
+    #BENEFÍCIOS {
+        display: flex;
+        flex-direction: column;
+        background-color: #F9F5EC;
+        height: fit-content;
+        padding: 20px;
+    }
+
+    #page-footer {
+        display: grid;
+        grid-template-columns: 30fr 2fr 1fr 4fr;
+    }
+
+    #download {
+        grid-column: 4 / 5;
+    }
+
+    .caixaBranca h1 {
+        font-size: 50px;
+    }
+}
+
+/* ---------------CELULAR------------ */
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    h1 {
+        font-size: 50px;
+        line-height: 15vw;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    header {
+        height: 60px;
+        width: 150vw;
+    }
+
+    nav {
+        margin-left: 85px;
+    }
+
+    #logo img {
+        height: 60px;
+        width: 130px;
+    }
+
+    .main-container {
+        width: 150vw;
+        min-width: 320px;
+    }
+
+    #BUSCAR-IMOVEIS {
+        margin-top: 60px;
+        height: 190vW;
+        background-size: 285vw;
+    }
+
+    #BUSCAR-IMOVEIS>div {
+        margin-top: 100vw;
+    }
+
+    #QUEMSOMOS {
+        background-color: #181411;
+        height: 1100px;
+        width: 150vw;
+        padding: 10px;
+    }
+
+    #QUEMSOMOS div {
+        margin-top: 200px;
+        text-align: start;
+        padding: 2vw;
+        gap: 30px;
+    }
+
+    #QUEMSOMOS div p {
+        width: 110vw;
+    }
+
+    #QUEMSOMOS img {
+        width: 100vw;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+
+    .revealimg {
+        transform: translateY(150px);
+    }
+
+    #MORADIAS {
+        height: fit-content;
+        padding: 10px;
+        padding-top: 100px;
+        padding-bottom: 20px;
+        text-align: start;
+    }
+
+    #BENEFÍCIOS>div h1 {
+        font-size: 70px;
+    }
+
+    #FOTOS-MORADIAS {
+        margin-top: 60px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    #FOTOS-MORADIAS figure {
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .slide img {
+        width: 100vw;
+    }
+
+    #slideA label {
+        height: 15px;
+        width: 20VW;
+    }
+
+    #slideB label {
+        height: 15px;
+        width: 20VW;
+    }
+
+    .slide li:nth-child(1) label {
+        left: 18vw;
+    }
+
+    .slide li:nth-child(2) label {
+        left: 42vw;
+    }
+
+    .slide li:nth-child(3) label {
+        left: 66vw;
+    }
+
+    #BENEFÍCIOS>div h1 {
+        text-align: start;
+        margin: 80px 0;
+    }
+
+    #BENEFÍCIOS {
+        padding: 10px;
+    }
+
+    #quatro-vantagens {
+        margin-top: 0;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        padding: 20vw;
+    }
+
+    #quatro-vantagens figure div {
+        width: 100vw;
+        height: 100vw;
+    }
+
+    #quatro-vantagens figcaption {
+        width: 110vw;
+        height: fit-content;
+    }
+
+    #CONTATO {
+        display: flex;
+        flex-direction: column;
+        height: 400vw;
+        background-color: rgb(156, 139, 123);
+    }
+
+    .caixaBranca {
+        margin: 20vw;
+        width: 110vw;
+    }
+
+    .figure-grande {
+        min-height: 180vw;
+        height: 220vw;
+        max-width: 900vw;
+    }
+
+    #page-footer {
+        margin-top: 120vw;
+        padding: 3vw 6vw;
+        height: fit-content;
+        background-color: rgb(228, 228, 228);
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page-footer>:first-child {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #download {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2vw;
+        gap: 10px;
+    }
+
+    .download-img {
+        width: 40vw;
+    }
+
+    #redes-sociais {
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+    }
+
+    #redes-sociais a img {
+        width: 14vw;
+    }
+
+}
