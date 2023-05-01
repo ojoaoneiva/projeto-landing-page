@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F4life</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="projeto.js" defer></script>
+</head>
+
+<body>
+    <!-- --------------------------HEADER------------------------- -->
+    <div class="main-container">
+        <header>
+            <figure id="logo">
+                <img src="./imagens e icones/9e6b91d4efa55e29eebe2f7919b819813b965a2e920ccbeb86a74578fc2513722c29a96daf7fed5a562d57542134e1e016afa6c8748ff9e2a08e14c12e9c82af8879a394cfcd53e31604b5f.jpg"
+                    alt="Logo">
+            </figure>
+            <nav>
+                <a href="#BUSCAR-IMOVEIS">BUSCAR IMÓVEIS</a>
+                <a href="#QUEMSOMOS">QUEM SOMOS</a>
+                <a href="#MORADIAS">NOSSAS MORADIAS</a>
+                <a href="#CONTATO">CONTATO</a>
+            </nav>
+        </header>
+        <!-- --------------------------MAIN------------------------- -->
+        <!-- --------------------------BUSCAR-IMOVEIS------------------------- -->
+        <main>
+            <section id="BUSCAR-IMOVEIS">
+                <div>
+                    <h1>F4LIFE</h1>
+                    <div>
+                        <p>Encontre um lar mais proximo à sua universidade</p>
+                        <fieldset id="buscar">
+                            <div>
+                                <label for="cidade">cidade</label>
+                            <select name="cidade" id="cidade">
+                                <option value="0">Busque por cidade</option>
+                                <option value="São Paulo">São Paulo</option>
+                                <option value="Rio">Rio de Janeiro</option>
+                                <option value="Salvador">Salvador</option>
+                                <option value="Belo Horizonte">Rio de Janeiro</option>
+                                <option value="Porto Alegre">Rio de Janeiro</option>
+                                <option value="Recife">Recife</option>
+                                <option value="Brasília">Rio de Janeiro</option>
+                                <option value="Goiânia">Rio de Janeiro</option>
+                            </select>
+                            </div>
+                            <div>
+                                <label for="quartos">Quartos</label>
+                            <select name="quartos" id="quartos">
+                                <option value="0">Nº de quartos</option>
+                                <option value="1">1+</option>
+                                <option value="2">2+</option>
+                                <option value="3">3+</option>
+                                <option value="4">4+</option>
+                            </select>
+                            </div>
+                        </fieldset>
+                    <button onclick="buscar(event)" id="botao-buscar">Buscar imóveis</button>
+                </div>
+                </div>
+            </section>
+            <!-- --------------------------QUEM SOMOS------------------------- -->
+            <section id="QUEMSOMOS">
+                <div class="container reveal">
+                    <h1>TRAZEMOS UM AMBIENTE CONFORTÁVEL E OTIMIZADO PARA A VIDA DE GRADUAÇÃO
+                    </h1>
+                    <p>A F4life reforma e prepara moradias para receber estudantes de uma forma única, pensando em cada
+                        detalhe para criar espaços que estimulem e facilitem a jornada acadêmica. Com unidades que
+                        atendem aos mais variados perfis de alunos por todo o Brasil, trazemos a opção com o melhor
+                        custo benfício do mercado.
+                    </p>
+                </div>
+                <img src="./imagens e icones/alunos-sorridentes-de-tiro-medio2.jpg" alt="imagem alunos conversando">
+
+            </section>
+            <!-- --------------------------NOSSAS MORADIAS----------------------- -->
+            <section id="MORADIAS">
+                <div>
+                    <h1>
+                        AS MELHORES OPÇÕES DIRECIONADAS PARA DIFERENTES PERFIS DE ALUNOS
+                    </h1>
+                </div>
+                <div id="FOTOS-MORADIAS">
+                    <figure>
+                        <ul class="slide" id="slideA">
+                            <li>
+                                <label for="slide1"></label>
+                                <input type="radio" id="slide1" name="slideA" checked>
+                                <img src="./imagens e icones/mcolegas-de-quarto-de-tiro-completo-na-cozinha.jpg" alt="">
+                            </li>
+                            <li>
+                                <label for="slide2"></label>
+                                <input type="radio" id="slide2" name="slideA">
+                                <img src="./imagens e icones/m interior-pequeno-do-quarto-de-hotel-com-cama-de-casal-e-banheiro.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <label for="slide3"></label>
+                                <input type="radio" id="slide3" name="slideA">
+                                <img src="./imagens e icones/m2colegas-de-quarto-de-vista-lateral-deitados-na-cama.jpg"
+                                    alt="">
+                            </li>
+                        </ul>
+                        <img src="./imagens e icones/mcolegas-de-quarto-de-tiro-completo-na-cozinha.jpg" alt="">
+                        <figcaption>
+                            <h3>Moradia compartilhada</h3>
+                            <p>Nessa opções os estudantes dividem os espaços sociais, que são e equipados para atender
+                                todos os moradores, além de espaços de uso comum como sala de estudos e ambientes de
+                                convivência.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <ul class="slide" id="slideB">
+                            <li>
+                                <label for="slide4"></label>
+                                <input type="radio" id="slide4" name="slideB">
+                                <img src="./imagens e icones/kaconchegante-sala-de-jantar-de-um-apartamento-moderno.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <label for="slide5"></label>
+                                <input type="radio" id="slide5" name="slideB">
+                                <img src="./imagens e icones/k interior-do-quarto.jpg" alt="">
+                            </li>
+                            <li>
+                                <label for="slide6"></label>
+                                <input type="radio" id="slide6" name="slideB">
+                                <img src="./imagens e icones/k2interior-do-quarto-de-hotel-com-area-de-quarto-espaco-de-estar-e-cozinha.jpg"
+                                    alt="">
+                            </li>
+                        </ul>
+                        <img src="./imagens e icones/kaconchegante-sala-de-jantar-de-um-apartamento-moderno.jpg" alt="">
+                        <figcaption>
+                            <h3>Kitnets</h3>
+                            <p>Realizamos reformas e prepara moradias com o acolhimento que os estudantes precisam. As
+                                opções de kitets trazem todo o conforto em espaços integrados e compactos, com tudo que
+                                é necessário.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <!-- --------------------------BENEFICIOS------------------------- -->
+            <section id="BENEFÍCIOS">
+                <div>
+                    <h1>MORADIAS OTIMIZADAS</h1>
+                    <p>Preparamos tudo para facilitar sua vida</p>
+                </div>
+
+                <div id="quatro-vantagens">
+
+                    <figure>
+                        <div>
+                            <img src="./imagens e icones/estudantes-de-tiro-completo-amontoando-se-juntos.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            <h3>Para estudantes</h3>
+                            <p>Nossos empreendimentos contam com sala de estudos, esapço de coorworking e ambientes
+                                reservados para ajudar os alunos no desempenho acadêmico e concentração diária.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div>
+                            <img src="./imagens e icones/bela-vista-dos-predios-da-cidade.jpg"
+                                alt="Imagem de paisgem urbana">
+                        </div>
+                        <figcaption>
+                            <h3>Localização</h3>
+                            <p>Nossos apartamentos ficam próximos aos principais campos universitários e poucos minutos
+                                de caminhada de uma estação de metro.</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div>
+                            <img src="./imagens e icones/mulher-manuseando-pertences-em-caixas-de-papelao-para-se-mudar-para-a-nova-casa.jpg"
+                                alt="imagem">
+                        </div>
+                        <figcaption>
+                            <h3>Melhores taxas</h3>
+                            <p>Sabemos que neste momento da graduação é preciso encontrar preços acessíveis para quem
+                                ainda vai entrar no mercado de trabalho, por isso oferecemos as melhores taxas com
+                                diferentes unidades habitacionais.</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div>
+                            <img src="./imagens e icones/pessoas-em-forma-treinando-juntos-tiro-completo.jpg"
+                                alt="Imagem de pessoas em uma academia">
+                        </div>
+
+                        <figcaption>
+                            <h3>Vida em comunidade</h3>
+                            <p>Os edifícios associados possuem academia, sala de jogos e espaços de convivência que
+                                proporcionam uma maior integração entre os estudantes e maior qualidade de vida durantes
+                                as semanas intensas da faculdade.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <!-- --------------------------CONTATO------------------------- -->
+            <section id="CONTATO">
+                <div class="caixaBranca">
+                    <h1>ENTRE EM CONTATO</h1>
+                    <p>Entraremos em contato com as opções ideias para você</p>
+
+                    <fieldset id="form">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" value="">
+                        <label for="telefone">Telefone:</label>
+                        <input type="number" name="telefone" id="telefone" value="">
+                        <button type="submit" id="enviar" onclick="enviar(event)">Solicitar contato</button>
+                    </fieldset>
+                </div>
+                <figure class="figure-grande">
+                    <video src="./imagens e icones/Preview _import_60c59be107a998.26715496.mp4" class="video-grande"
+                        autoplay loop> mensagem<video>
+
+                </figure>
+            </section>
+        </main>
+        <!-- --------------------------FOOTER------------------------- -->
+        <footer id="page-footer">
+            <div>
+                <p>A F4life é especialista no processo de reforma e preparação de moradias para recepção de pessoas
+                    universitárias no Brasil. Nosso compromisso é facilitar a vida acadêmica, com moradia pra tornar
+                    essa
+                    experiencia mais simples, proveitosa e com menos burocracia.</p>
+                <h3>ENDEREÇO:</h3>
+                <p>Rua XXXX, 000 - Bairro X, São Paulo - SP, 00000-000</p>
+            </div>
+
+            <div id="download">
+                <a href="https://apps.apple.com/br/app/apple-store/id375380948" target="_blank"><img
+                        src="./imagens e icones/icone-apple-store.png" alt="icone apple store" class="download-img"></a>
+                <a href="https://play.google.com/store/games?hl=pt_BR&gl=US&pli=1" target="_blank"><img
+                        src="./imagens e icones/icone-google-play.png" alt="icone google play" class="download-img"></a>
+            </div>
+            <div id="redes-sociais">
+                <a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img
+                        src="./imagens e icones/instagram.png" alt="icone instagram"></a>
+                <a href="https://twitter.com/" target="_blank"> <img src="./imagens e icones/twitter.png"
+                        alt="icone twitter"></a>
+                <a href="https://web.facebook.com/" target="_blank"> <img src="./imagens e icones/facebook.png"
+                        alt="icone facebook"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
