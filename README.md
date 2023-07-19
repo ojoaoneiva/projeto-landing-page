@@ -26,9 +26,10 @@ https://landingpage-joaoneiva.surge.sh/
 
 ![1](https://user-images.githubusercontent.com/122841627/235406701-1453f696-ae0a-4295-931b-21586d5f1321.JPG)
 ![2](https://user-images.githubusercontent.com/122841627/235406704-6df7b26f-7f2e-439d-a520-665fc2fc9114.JPG)
-![3](https://user-images.githubusercontent.com/122841627/235406705-d5016ecd-0f46-4aff-a1df-8366e0ec3688.JPG)
-![4](https://user-images.githubusercontent.com/122841627/235406706-10c58fdd-fd32-4371-8fcd-21ecbd157e14.JPG)
-![5](https://user-images.githubusercontent.com/122841627/235406707-012f6ea2-1f9d-428e-afb2-e005bb70bc55.JPG)
-![6](https://user-images.githubusercontent.com/122841627/235406708-3288c569-16a5-4994-91c1-f2bc62a77b5c.JPG)
-![7](https://user-images.githubusercontent.com/122841627/235406709-0a8ecd20-f513-47d7-84c3-73b4fb8ddc58.JPG)
-![8](https://user-images.githubusercontent.com/122841627/235406711-8a0a49a1-6ec1-4b05-a782-3947fd3250c4.JPG)
+![4](https://github.com/ojoaoneiva/projeto-landing-page/assets/122841627/9dedbcb3-0d7e-4446-b892-d4d98238ea14)
+![9](https://github.com/ojoaoneiva/projeto-landing-page/assets/122841627/2c9c549f-b7bf-43f1-839b-b3c3c9c3e4b7)
+![7](https://github.com/ojoaoneiva/projeto-landing-page/assets/122841627/5c772c73-eab8-4f2c-aa5c-44a0c400dd84)
+![8](https://github.com/ojoaoneiva/projeto-landing-page/assets/122841627/1cdda274-855d-4ef4-b65f-7650f26cd187)
+![5](https://github.com/ojoaoneiva/projeto-landing-page/assets/122841627/694c8a4d-e361-4882-ad07-e59ea7b0eaca)
+![6](https://github.com/ojoaoneiva/projeto-landing-page/assets/122841627/9ac86c2e-4d45-4e21-8652-75b61aac7f55)
+
