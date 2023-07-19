@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>F4life</title>
     <link rel="stylesheet" href="style.css">
     <script src="projeto.js" defer></script>
@@ -16,14 +16,25 @@
         <header>
             <figure id="logo">
                 <img src="./imagens e icones/9e6b91d4efa55e29eebe2f7919b819813b965a2e920ccbeb86a74578fc2513722c29a96daf7fed5a562d57542134e1e016afa6c8748ff9e2a08e14c12e9c82af8879a394cfcd53e31604b5f.jpg"
-                    alt="Logo">
+                    alt="Logo F4Life">
             </figure>
-            <nav>
-                <a href="#BUSCAR-IMOVEIS">BUSCAR IMÓVEIS</a>
-                <a href="#QUEMSOMOS">QUEM SOMOS</a>
-                <a href="#MORADIAS">NOSSAS MORADIAS</a>
-                <a href="#CONTATO">CONTATO</a>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li class="nav-item"> <a href="#BUSCAR-IMOVEIS" >BUSCAR IMÓVEIS</a> </li>
+                    <li class="nav-item"> <a href="#QUEMSOMOS">QUEM SOMOS</a> </li>
+                    <li class="nav-item"> <a href="#MORADIAS">NOSSAS MORADIAS</a> </li>
+                    <li class="nav-item"> <a href="#CONTATO">CONTATO</a> </li>
+                    <div class="mobile-menu-ICON" ><button onclick="showMenu()"><img class="ICON" src="./imagens e icones/menu.svg" alt="icone menu"></button></div>
+                </ul>              
             </nav>
+            <div class="mobile-menu"> 
+                <ul class="nav-list">
+                    <li class="nav-item"> <a href="#BUSCAR-IMOVEIS" onclick="showMenu()">BUSCAR IMÓVEIS</a> </li>
+                    <li class="nav-item"> <a href="#QUEMSOMOS" onclick="showMenu()">QUEM SOMOS</a> </li>
+                    <li class="nav-item"> <a href="#MORADIAS" onclick="showMenu()">NOSSAS MORADIAS</a> </li>
+                    <li class="nav-item"> <a href="#CONTATO" onclick="showMenu()">CONTATO</a> </li>
+                </ul>
+            </div>
         </header>
         <!-- --------------------------MAIN------------------------- -->
         <!-- --------------------------BUSCAR-IMOVEIS------------------------- -->
@@ -86,26 +97,16 @@
                 </div>
                 <div id="FOTOS-MORADIAS">
                     <figure>
-                        <ul class="slide" id="slideA">
-                            <li>
-                                <label for="slide1"></label>
-                                <input type="radio" id="slide1" name="slideA" checked>
-                                <img src="./imagens e icones/mcolegas-de-quarto-de-tiro-completo-na-cozinha.jpg" alt="">
-                            </li>
-                            <li>
-                                <label for="slide2"></label>
-                                <input type="radio" id="slide2" name="slideA">
-                                <img src="./imagens e icones/m interior-pequeno-do-quarto-de-hotel-com-cama-de-casal-e-banheiro.jpg"
-                                    alt="">
-                            </li>
-                            <li>
-                                <label for="slide3"></label>
-                                <input type="radio" id="slide3" name="slideA">
-                                <img src="./imagens e icones/m2colegas-de-quarto-de-vista-lateral-deitados-na-cama.jpg"
-                                    alt="">
-                            </li>
-                        </ul>
-                        <img src="./imagens e icones/mcolegas-de-quarto-de-tiro-completo-na-cozinha.jpg" alt="">
+                        
+                                <img class="mySlides" src="./imagens e icones/mcolegas-de-quarto-de-tiro-completo-na-cozinha.jpg" alt="imagem colegas de quarto na cozinha">
+                                <img class="mySlides" src="./imagens e icones/m interior-pequeno-do-quarto-de-hotel-com-cama-de-casal-e-banheiro.jpg"
+                                    alt="imagem de quarto da moradia compartilhada">
+                                <img class="mySlides" src="./imagens e icones/m2colegas-de-quarto-de-vista-lateral-deitados-na-cama.jpg"
+                                    alt="imagem de colegas de quarto na moradia compartilhada">
+                        <div class="seta">
+                            <button onclick="plusDivs(-1)">&#10094;</button>
+                            <button onclick="plusDivs(+1)">&#10095;</button>
+                        </div>
                         <figcaption>
                             <h3>Moradia compartilhada</h3>
                             <p>Nessa opções os estudantes dividem os espaços sociais, que são e equipados para atender
@@ -115,26 +116,15 @@
                     </figure>
 
                     <figure>
-                        <ul class="slide" id="slideB">
-                            <li>
-                                <label for="slide4"></label>
-                                <input type="radio" id="slide4" name="slideB">
-                                <img src="./imagens e icones/kaconchegante-sala-de-jantar-de-um-apartamento-moderno.jpg"
-                                    alt="">
-                            </li>
-                            <li>
-                                <label for="slide5"></label>
-                                <input type="radio" id="slide5" name="slideB">
-                                <img src="./imagens e icones/k interior-do-quarto.jpg" alt="">
-                            </li>
-                            <li>
-                                <label for="slide6"></label>
-                                <input type="radio" id="slide6" name="slideB">
-                                <img src="./imagens e icones/k2interior-do-quarto-de-hotel-com-area-de-quarto-espaco-de-estar-e-cozinha.jpg"
-                                    alt="">
-                            </li>
-                        </ul>
-                        <img src="./imagens e icones/kaconchegante-sala-de-jantar-de-um-apartamento-moderno.jpg" alt="">
+                                <img class="mySlides2" src="./imagens e icones/kaconchegante-sala-de-jantar-de-um-apartamento-moderno.jpg"
+                                    alt="imagem sala de jantar">
+                                <img class="mySlides2" src="./imagens e icones/k interior-do-quarto.jpg" alt="Imagem quarto">
+                                <img class="mySlides2" src="./imagens e icones/k2interior-do-quarto-de-hotel-com-area-de-quarto-espaco-de-estar-e-cozinha.jpg"
+                                    alt="Imagem Kitnet">
+                        <div class="seta">  
+                            <button onclick="plusDivs2(-1)">&#10094;</button>
+                            <button onclick="plusDivs2(+1)">&#10095;</button>
+                        </div>
                         <figcaption>
                             <h3>Kitnets</h3>
                             <p>Realizamos reformas e prepara moradias com o acolhimento que os estudantes precisam. As
@@ -155,7 +145,7 @@
 
                     <figure>
                         <div>
-                            <img src="./imagens e icones/estudantes-de-tiro-completo-amontoando-se-juntos.jpg" alt="">
+                            <img src="./imagens e icones/estudantes-de-tiro-completo-amontoando-se-juntos.jpg" alt="Imagem de jovens estudando">
                         </div>
                         <figcaption>
                             <h3>Para estudantes</h3>
@@ -178,7 +168,7 @@
                     <figure>
                         <div>
                             <img src="./imagens e icones/mulher-manuseando-pertences-em-caixas-de-papelao-para-se-mudar-para-a-nova-casa.jpg"
-                                alt="imagem">
+                                alt="imagem de jovem se mudando para apartamento">
                         </div>
                         <figcaption>
                             <h3>Melhores taxas</h3>
@@ -218,7 +208,7 @@
                     </fieldset>
                 </div>
                 <figure class="figure-grande">
-                    <video src="./imagens e icones/Preview _import_60c59be107a998.26715496.mp4" class="video-grande"
+                    <video src="./imagens e icones/Preview _import_60c59be107a998.26715496.mp4" alt="video jovens estudando" class="video-grande"
                         autoplay loop> mensagem<video>
 
                 </figure>
