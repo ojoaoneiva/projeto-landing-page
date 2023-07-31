@@ -1,20 +1,20 @@
 # [Landing Page](https://landingpage-joaoneiva.surge.sh/)
 
-## Sobre o Projeto:
-O projeto consiste em construir o front-end de uma única página web para uma empresa fictícia com foco em residência universitária.
+## About:
+The project consists on building the front-end of a single web page for a fictional company focused on university residence.
 
-## Objetivos:
-- Possuir diferentes seções
-- Ícones clicáveis que direcionam para redes sociais
-- Formulário de contato
-- Responsividade
-- Botões com lógica Javascript para enviar dados do usuário e limpar os inputs
-- Elementos que se modificam com posicionamento e scroll do mouse
+## Functionalities:
+- Has different sections.
+- Clickable icons that lead to social media profiles.
+- Contact form
+- Responsiveness
+- Javascript code on buttons to submit user data and clear inputs.
+- Elements that change with mouse positioning and scrolling.
 
-## Deploy da aplicação com o surge:
+## Deploy:
 https://landingpage-joaoneiva.surge.sh/
 
-## Tecnologias utilizadas:
+## Technologies used:
 - HTML
 - CSS
 - JavaScript
@@ -22,7 +22,7 @@ https://landingpage-joaoneiva.surge.sh/
 - CSS Grid
 - Flexbox
 
-## Imagens:
+## Images:
 
 ![1](https://user-images.githubusercontent.com/122841627/235406701-1453f696-ae0a-4295-931b-21586d5f1321.JPG)
 ![2](https://user-images.githubusercontent.com/122841627/235406704-6df7b26f-7f2e-439d-a520-665fc2fc9114.JPG)
