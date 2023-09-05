@@ -23,7 +23,7 @@ https://landingpage-joaoneiva.surge.sh/
 - Flexbox
 
 ## Imagens:
-<div div align="center">
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
 
     <img src="./F4LIFE/imagens e icones/F4life.gif" alt="project gif" width="600">
     <img src="./F4LIFE/imagens e icones/mobile.jpg" alt="project print screen" width="600">  
