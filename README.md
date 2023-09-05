@@ -1,20 +1,20 @@
 # [Landing Page](https://landingpage-joaoneiva.surge.sh/)
 
-## Sobre o Projeto:
-O projeto consiste em construir o front-end de uma única página web para uma empresa fictícia com foco em residência universitária.
+## About:
+The project consists on building the front-end of a single web page for a fictional company focused on university residence.
 
-## Objetivos:
-- Possuir diferentes seções
-- Ícones clicáveis que direcionam para redes sociais
-- Formulário de contato
-- Responsividade
-- Botões com lógica Javascript para enviar dados do usuário e limpar os inputs
-- Elementos que se modificam com posicionamento e scroll do mouse
+## Functionalities:
+- Has different sections.
+- Clickable icons that lead to social media profiles.
+- Contact form
+- Responsiveness
+- Javascript code on buttons to submit user data and clear inputs.
+- Elements that change with mouse positioning and scrolling.
 
-## Deploy da aplicação com o surge:
+## Deploy:
 https://landingpage-joaoneiva.surge.sh/
 
-## Tecnologias utilizadas:
+## Technologies used:
 - HTML
 - CSS
 - JavaScript
@@ -27,9 +27,10 @@ https://landingpage-joaoneiva.surge.sh/
 
 ![1](https://user-images.githubusercontent.com/122841627/235406701-1453f696-ae0a-4295-931b-21586d5f1321.JPG)
 ![2](https://user-images.githubusercontent.com/122841627/235406704-6df7b26f-7f2e-439d-a520-665fc2fc9114.JPG)
-![3](https://user-images.githubusercontent.com/122841627/235406705-d5016ecd-0f46-4aff-a1df-8366e0ec3688.JPG)
-![4](https://user-images.githubusercontent.com/122841627/235406706-10c58fdd-fd32-4371-8fcd-21ecbd157e14.JPG)
-![5](https://user-images.githubusercontent.com/122841627/235406707-012f6ea2-1f9d-428e-afb2-e005bb70bc55.JPG)
-![6](https://user-images.githubusercontent.com/122841627/235406708-3288c569-16a5-4994-91c1-f2bc62a77b5c.JPG)
-![7](https://user-images.githubusercontent.com/122841627/235406709-0a8ecd20-f513-47d7-84c3-73b4fb8ddc58.JPG)
-![8](https://user-images.githubusercontent.com/122841627/235406711-8a0a49a1-6ec1-4b05-a782-3947fd3250c4.JPG)
+![3](https://github.com/ojoaoneiva/projeto-landing-page/assets/122841627/f0d0b775-c1c8-4411-b9fd-13ed78a00a78)
+![4](https://github.com/ojoaoneiva/projeto-landing-page/assets/122841627/95800389-ebb2-4ca7-925c-f398e581a2fc)
+![9](https://github.com/ojoaoneiva/projeto-landing-page/assets/122841627/2c9c549f-b7bf-43f1-839b-b3c3c9c3e4b7)
+![8](https://github.com/ojoaoneiva/projeto-landing-page/assets/122841627/1cdda274-855d-4ef4-b65f-7650f26cd187)
+![5](https://github.com/ojoaoneiva/projeto-landing-page/assets/122841627/694c8a4d-e361-4882-ad07-e59ea7b0eaca)
+![6](https://github.com/ojoaoneiva/projeto-landing-page/assets/122841627/9ac86c2e-4d45-4e21-8652-75b61aac7f55)
+
