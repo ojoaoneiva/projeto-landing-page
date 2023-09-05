@@ -1,5 +1,9 @@
 # [Landing Page](https://landingpage-joaoneiva.surge.sh/)
 
+<p align="center">
+  <img src="./F4LIFE/imagens e icones/F4life.gif" alt="project gif" width="600">
+</p>
+
 ## Sobre o Projeto:
 O projeto consiste em construir o front-end de uma única página web para uma empresa fictícia com foco em residência universitária.
 
@@ -24,7 +28,6 @@ https://landingpage-joaoneiva.surge.sh/
 
 ## Imagens:
 <p align="center">
-  <img src="./F4LIFE/imagens e icones/F4life.gif" alt="project gif" width="600">
   <img src="./F4LIFE/imagens e icones/mobile.jpg" alt="project print screen" width="600">  
   <img src="./F4LIFE/imagens e icones/1.jpg" alt="project print screen" width="600">  
   <img src="./F4LIFE/imagens e icones/2.jpg" alt="project print screen" width="600">  
