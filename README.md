@@ -23,8 +23,6 @@ https://landingpage-joaoneiva.surge.sh/
 - Flexbox
 
 ## Images:
-![image](https://github.com/ojoaoneiva/projeto-landing-page/assets/122841627/d506ec0c-5cde-446a-9de9-0f2f96f138ef)
-
 
 ![1](https://user-images.githubusercontent.com/122841627/235406701-1453f696-ae0a-4295-931b-21586d5f1321.JPG)
 ![2](https://user-images.githubusercontent.com/122841627/235406704-6df7b26f-7f2e-439d-a520-665fc2fc9114.JPG)
