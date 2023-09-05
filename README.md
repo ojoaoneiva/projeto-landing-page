@@ -23,7 +23,7 @@ https://landingpage-joaoneiva.surge.sh/
 - Flexbox
 
 ## Imagens:
- <img style="width: 70%;position: relative;left: 15%" src="https://user-images.githubusercontent.com/122841627/235406701-1453f696-ae0a-4295-931b-21586d5f1321.JPG"/>
+ <img style="width: 70%;position: absolute; left: 15%" src="./F4LIFE/imagens e icones/F4life.gif"/>
 
 ![1](https://user-images.githubusercontent.com/122841627/235406701-1453f696-ae0a-4295-931b-21586d5f1321.JPG)
 ![2](https://user-images.githubusercontent.com/122841627/235406704-6df7b26f-7f2e-439d-a520-665fc2fc9114.JPG)
