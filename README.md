@@ -24,6 +24,10 @@ https://landingpage-joaoneiva.surge.sh/
 
 ## Imagens:
 <div div align="center">
-  
-    <img src="https://github.com/ojoaoneiva/projeto-landing-page/assets/122841627/afad565f-00ee-477f-aeb9-7931460d0eb3" alt="4" width="600">  
+
+    <img src="./F4LIFE/imagens e icones/F4life.gif" alt="project gif" width="600">
+    <img src="./F4LIFE/imagens e icones/mobile.jpg" alt="project print screen" width="600">  
+    <img src="./F4LIFE/imagens e icones/1.jpg" alt="project print screen" width="600">  
+    <img src="./F4LIFE/imagens e icones/2.jpg" alt="project print screen" width="600">  
+    <img src="./F4LIFE/imagens e icones/3.jpg" alt="project print screen" width="600">  
 </div>
