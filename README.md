@@ -23,11 +23,7 @@ https://landingpage-joaoneiva.surge.sh/
 - Flexbox
 
 ## Images:
-<video>   src="https://github.com/ojoaoneiva/projeto-landing-page/assets/122841627/235cfec8-b1e5-4e63-8133-4dcc3789dc85" controls loop autoplay> mensagem <video>
 ![image](https://github.com/ojoaoneiva/projeto-landing-page/assets/122841627/d506ec0c-5cde-446a-9de9-0f2f96f138ef)
-
-
-https://github.com/ojoaoneiva/projeto-landing-page/assets/122841627/235cfec8-b1e5-4e63-8133-4dcc3789dc85
 
 
 ![1](https://user-images.githubusercontent.com/122841627/235406701-1453f696-ae0a-4295-931b-21586d5f1321.JPG)
