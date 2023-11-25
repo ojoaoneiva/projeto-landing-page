@@ -5,9 +5,9 @@
     font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
 }
 
-body {
+/* body {
     overflow-x: hidden;
-}
+} */
 
 #loading-strip1 {
     position: fixed;
@@ -203,6 +203,7 @@ nav>ul {
 main {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 /* ---------------HEADER------------ */
@@ -686,7 +687,11 @@ button {
 
 /* ---------------MOBILE------------ */
 @media (max-width : 600px) {
-    h1 {
+    body {
+        margin: 0;
+      }
+      
+      h1 {
         font-size: 50px;
         line-height: 15vw;
     }
@@ -715,11 +720,10 @@ button {
         margin: 0;
         width: fit-content;
     }
-
+    
     .mobile-menu-ICON button {
         border: none;
         height: 59px;
-        padding-right: 10px;
         width: fit-content;
     }
 
@@ -752,11 +756,6 @@ button {
         width: fit-content;
     }
 
-    .main-container {
-        width: 100%;
-        min-width: 320px;
-    }
-
     #HEADER {
         margin-top: 3.5rem;
         height: 100vw;
@@ -764,10 +763,11 @@ button {
         background-size: 250vw;
         background-position: 20% 3%;
         padding: 0;
+        overflow: hidden;
     }
 
     #HEADER h1 {
-        font-size: 17.5vw;
+        font-size: 16vw;
     }
 
     #HEADER>div {
@@ -846,11 +846,6 @@ button {
         width: 30vw;
         margin: 0 0;
     }
-
-
-
-
-
 
     #HOMES {
         height: fit-content;

@@ -27,15 +27,21 @@ function animateImage(selector, yOffset1, yOffset2, rotateDeg) {
     ease: "power4.out",
     scrollTrigger: {
       trigger: selector,
-      start: "top 90%",
+      start: "top 95%",
       end: "top 1%",
-      scrub: 1,
+      scrub: window.innerWidth < 600 ? 0.9 : 0.2,
     },
   });
 }
 
-animateImage(".image-wrapper1", 120, 40, 10);
-animateImage(".image-wrapper2", 160, 60, 5);
+function setupImageAnimations() {
+  animateImage(".image-wrapper1", 120, 40, 10);
+  animateImage(".image-wrapper2", 160, 60, 5);
+}
+
+document.addEventListener('DOMContentLoaded', setupImageAnimations);
+
+
 
 // Text animation
 function applyTextAnimation(element) {
@@ -83,13 +89,17 @@ function setupParallax() {
 
 document.addEventListener('DOMContentLoaded', setupParallax);
 
+
 // Function to show/hide menu
-function toggleMenu() {
-  const menuMobile = document.querySelector(".mobile-menu");
-  const icon = document.querySelector(".ICON");
-  
-  menuMobile.classList.toggle("open");
-  icon.src = menuMobile.classList.contains("open") ? "./assets/icons/close.svg" : "./assets/icons/menu.svg";
+function showMenu(){
+  let menuMobile = document.querySelector(".mobile-menu");
+  if (menuMobile.classList.contains("open")) {
+    menuMobile.classList.remove("open")
+    document.querySelector(".ICON").src="./assets/icons/menu.svg";
+  } else{
+    menuMobile.classList.add("open");
+    document.querySelector(".ICON").src="./assets/icons/close.svg";
+  }
 }
 
 // Left slider images
@@ -170,7 +180,7 @@ lenis.on('scroll', (e) => {
 });
 
 gsap.ticker.add((time) => {
-  lenis.raf(time * 700);
+  lenis.raf(time * 400);
 });
 
 gsap.ticker.lagSmoothing(0);
@@ -206,7 +216,7 @@ window.addEventListener('beforeunload', () => {
 });
 
 // Loading page
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener('load', function () {
   const loadingOverlays = [
     document.getElementById("loading-strip1"),
     document.getElementById("loading-strip2"),
@@ -219,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function () {
       gsap.to(loadingOverlay, {
         y: "-100%",
         opacity: 1,
-        duration: index===0 ? index + 0.2 : index * 1.005,
+        duration: index === 0 ? index + 0.2 : index * 1.005,
         ease: "power4.out",
         onComplete: () => {
           loadingOverlay.style.display = "none";
