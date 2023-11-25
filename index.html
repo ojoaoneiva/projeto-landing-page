@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNIH</title>
+    <link rel="icon" href="assets/icons/logo2.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.25/bundled/lenis.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- --------------------------LOADING------------------------- -->
+    <div id="loading-overlay">
+        <div id="loading-strip1"></div>
+        <div id="loading-strip2"></div>
+        <div id="loading-strip3"></div>
+        <div id="loading-strip4"></div>
+    </div>
+    <!-- --------------------------NAVBAR------------------------- -->
+    <div class="main-container">
+        <header>
+            <figure id="logo">
+                <a href="#HEADER">
+                    <img src="./assets/icons/logo.png" alt="Logo">
+                </a>
+            </figure>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+
+                    <li class="nav-item"> <a href="#ABOUT">ABOUT</a> </li>
+                    <li class="nav-item"> <a href="#HOMES">OUR HOMES</a> </li>
+                    <li class="nav-item"> <a href="#COMMUNITY">COMMUNITY</a> </li>
+                    <li class="nav-item"> <a href="#CONTACT">CONTACT</a> </li>
+
+                    <div class="mobile-menu-ICON"><button onclick="showMenu()"><img class="ICON"
+                                src="./assets/icons/menu.svg" alt="icone menu"></button></div>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <ul class="nav-list">
+
+                    <li class="nav-item"> <a href="#ABOUT" onclick="showMenu()">ABOUT</a> </li>
+                    <li class="nav-item"> <a href="#HOMES" onclick="showMenu()">OUR HOMES</a> </li>
+                    <li class="nav-item"> <a href="#COMMUNITY" onclick="showMenu()">COMMUNITY</a> </li>
+                    <li class="nav-item"> <a href="#CONTACT" onclick="showMenu()">CONTACT</a> </li>
+                </ul>
+            </div>
+        </header>
+        <!-- --------------------------MAIN------------------------- -->
+        <!-- --------------------------HEADER------------------------- -->
+        <main>
+            <section id="HEADER">
+                <div id="headercontainer">
+                    <div id="subtitle">
+                        <div>
+                            Helping your graduate life
+                        </div>
+                        <h1>University Housing</h1>
+                    </div>
+            </section>
+            <!-- --------------------------ABOUT------------------------- -->
+            <section id="ABOUT">
+                <div class="container">
+                    <h1>WE BRING A COMFORTABLE AND OPTIMIZED ENVIRONMENT FOR THE GRADUATE LIFE
+                    </h1>
+                    <p>F4life renovates and prepares residences to welcome students in a unique way, considering every
+                        detail to create spaces that stimulate and facilitate the academic journey. With units catering
+                        to a variety of student profiles throughout Brazil, we offer the option with the best
+                        cost-benefit in the market.
+                    </p>
+                </div>
+                <div class="image-container" id="image-container">
+                    <div class="image-wrapper1">
+                        <img src="./assets/A1.jpg" alt="students walking" class="containerImage">
+                    </div>
+                    <div class="image-wrapper2">
+                        <img src="./assets/A2.jpg" alt="students on the library" class="containerImage">
+                    </div>
+                </div>
+                <div class="container2">
+                    <h1 class="titleeffect">DRIVEN BY THE DETAILS
+                    </h1>
+                    <div>
+                        <p>Select properties near your university</p>
+                        <p>Schedule online visits</p>
+                        <p>Negotiate without intermediaries</p>
+                        <p>Sign the contract digitally</p>
+                        <p>Properties with comfort and security</p>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- --------------------------HOMES----------------------- -->
+            <section id="HOMES">
+                <div>
+                    <h1 class="titleeffect">
+                        THE BEST OPTIONS TO DIFFERENT STUDENT PROFILES
+                    </h1>
+                </div>
+                <div id="HOMES-IMAGES">
+                    <figure class="slider-container">
+                        <div class="image-container">
+                            <img class="mySlides" src="./assets/H1.jpg" alt="image of a studio">
+                            <img class="mySlides" src="./assets/H2.jpg" alt="image of a studio">
+                            <img class="mySlides" src="./assets/H3.jpg" alt="young people in a shared room">
+                            <div class="image-overlay"></div>
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="arrow">
+                            <button onclick="plusDivs(-1)">&#10094;</button>
+                            <button onclick="plusDivs(+1)">&#10095;</button>
+                        </div>
+                        <figcaption>
+                            <h3>Cooliving</h3>
+                            <p>In these options, students share social spaces, which are equipped to meet all residents,
+                                as well as common areas such as study rooms and communal spaces.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="slider-container2">
+                        <div class="image-container2">
+                            <img class="mySlides2" src="./assets/H4.jpg" alt="image of a living room">
+                            <img class="mySlides2" src="./assets/H5.jpg" alt="image of a room">
+                            <img class="mySlides2" src="./assets/H6.jpg" alt="Image of astudio">
+                            <div class="image-overlay2"></div>
+                            <div class="progress-bar2"></div>
+                        </div>
+                        <div class="arrow">
+                            <button onclick="plusDivs2(-1)">&#10094;</button>
+                            <button onclick="plusDivs2(+1)">&#10095;</button>
+                        </div>
+                        <figcaption>
+                            <h3>Studio Apartments</h3>
+                            <p>We carry out renovations and prepare residences with the warmth that students need. The
+                                kit options bring all the comfort in integrated and compact spaces, equipped with
+                                everything necessary.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <!-- --------------------------PROS------------------------- -->
+            <section id="PROS">
+                <div>
+                    <h1 class="titleeffect">OPTIMIZED RESIDENCES</h1>
+                    <p>We prepare everything to make your life easier.</p>
+                </div>
+
+                <div id="quatro-vantagens">
+
+                    <figure>
+                        <div>
+                            <img src="./assets/P1.jpg" alt="people studying">
+                        </div>
+                        <figcaption>
+                            <h3>For students</h3>
+                            <p>Our developments feature study rooms, co-working spaces, and reserved environments to
+                                assist students in academic performance and daily concentration.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div>
+                            <img src="./assets/P2.jpg" alt="urban picture">
+                        </div>
+                        <figcaption>
+                            <h3>Location</h3>
+                            <p>Our apartments are located near the main university campuses and just a few minutes' walk
+                                from a metro station.</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div>
+                            <img src="./assets/P3.jpg" alt="people in the gym">
+                        </div>
+
+                        <figcaption>
+                            <h3>Community Living</h3>
+                            <p>The associated buildings have a gym, game room, and communal spaces that foster greater
+                                integration among students and a higher quality of life during the intense weeks of
+                                college.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <!-- --------------------------COMMUNITY------------------------- -->
+            <section id="COMMUNITY" class="parallax">
+                <div class="first">
+                    <h1 class="titleeffect">Our Housing Solutions are here to be a partner in your academic success,
+                        providing more than just a place to live.
+                    </h1>
+                    <div>
+                        <p class="upper">
+                            Experience the ease of finding a home that suits your lifestyle.
+                        </p>
+                        <p>
+                            At University Housing Solutions, we recognize the significance of providing affordable
+                            accommodation options for students entering a crucial phase in their education and preparing
+                            to step into the professional world. We are dedicated to offering competitive rates across a
+                            variety of housing units, ensuring that your living experience is not only comfortable but
+                            also budget-friendly.
+
+                            <!-- Our commitment goes beyond just providing a place to stay; we prioritize creating a conducive environment for academic growth and personal development. Our residences are thoughtfully designed to cater to the unique needs of university students, with amenities that foster both comfort and security. -->
+
+                            When you choose University Housing Solutions, you're opting for more than just a living
+                            space, you're investing in a community that understands and supports your journey through
+                            higher education. From hassle-free online property selection to virtual tours, negotiation
+                            without intermediaries, and digital contract signing, we've streamlined the entire process
+                            to make it convenient for you.
+
+                            <!-- Experience the ease of finding a home that suits your lifestyle, allowing you to focus on your studies and make the most of your university years. University Housing Solutions is here to be a partner in your academic success, providing more than just a place to live; we offer a foundation for a fulfilling university experience. -->
+                        </p>
+                    </div>
+                </div>
+                <img src="./assets/C1.jpg" alt="group of students smiling" class="parallax-img">
+                <div class="second">
+                    <h2 class="upper">focus on your studies and make the most of your university years</h2>
+                    <button class="outlined">Search for houses</button>
+                </div>
+            </section>
+        </main>
+        <!-- --------------------------FOOTER/CONTACT------------------------- -->
+
+        <footer id="CONTACT">
+            <div id="footertitle">
+                <h1 class="titleeffect">Housing Solutions</h1>
+            </div>
+
+            <div id="line"></div>
+            <div id="infoss">
+                <h1 class="titleeffect">GET IN TOUCH</h1>
+
+                <div>
+                    <ul>
+                        <li>XXXX Street 000-X, Sao Paulo-SP</li>
+                        <li>(123) 988-0998</li>
+                        <li>(222) 999-8898</li>
+                        <li>info@universityhousing.com</li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://www.instagram.com/?hl=pt-br" target="_blank"
+                                class="socialNetwork">instagram</a></li>
+                        <li><a href="https://twitter.com/" target="_blank" class="socialNetwork">twitter</a></li>
+                        <li class="socialNetwork"><a href="https://web.facebook.com/" target="_blank"> facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="line2"></div>
+            <div>
+                <p>Joao Neiva &copy; Copyright - 2023</p>
+            </div>
+        </footer>
+    </div> <!-- <div>
+                <p>F4life specializes in the process of renovating and preparing residences for hosting university students in Brazil. Our commitment is to simplify academic life by providing housing to make this experience easier, more enjoyable, and less bureaucratic.</p>
+                <h3>ADRESS:</h3>
+                <p>XXXX Street, 000 - X Neighborhood, São Paulo - SP, 00000-000</p>
+            </div> -->
+</body>
+
+</html>

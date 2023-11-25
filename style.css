@@ -1,0 +1,974 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#loading-strip1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1E1E21;
+    width: 25vw;
+    height: 100vh;
+    z-index: 9999;
+}
+
+#loading-strip2 {
+    position: fixed;
+    top: 0;
+    left: 25vw;
+    background-color: #1E1E21;
+    width: 25vw;
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #c5d0dd;
+
+}
+
+#loading-strip3 {
+    position: fixed;
+    top: 0;
+    left: 50vw;
+    background-color: #1E1E21;
+    width: 25vw;
+    height: 100vh;
+    z-index: 9999;
+}
+
+#loading-strip4 {
+    position: fixed;
+    top: 0;
+    left: 75vw;
+    background-color: #1E1E21;
+    width: 25vw;
+    height: 100vh;
+    z-index: 9999;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 65px;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    background-color: #112236;
+    color: #61BDBE;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.outlined {
+    color: #181411;
+    border: 1px solid #181411;
+    background-color: transparent;
+    padding: 15px 30px;
+    width: fit-content;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.2s ease;
+    z-index: 2;
+}
+
+.outlined:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, #112236 0%, #112236 100%);
+    transition: transform 0.2s ease;
+    color: #F9F5EC;
+}
+
+.outlined:hover:before {
+    transform: translateY(-100%);
+}
+
+.outlined:hover {
+    color: #F9F5EC;
+}
+
+.titleeffect,
+.upper {
+    text-transform: uppercase;
+}
+
+figure {
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+/* ---------------NAVBAR------------ */
+
+header {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #112236;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+}
+
+#logo img {
+    height: 40px;
+    width: 110px;
+    cursor: pointer;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    margin-top: 10px;
+    padding-right: 3vw;
+    list-style: none;
+}
+
+.nav-item a {
+    color: #F9F5EC;
+}
+
+.nav-item {
+    height: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: -11px;
+    padding: 5px;
+}
+
+.nav-item:hover {
+    background-color: rgb(149, 149, 149);
+    height: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: -11px;
+    padding: 5px;
+    transition: background-color 0.5s ease;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-ICON {
+    display: none;
+}
+
+/* ---------------MAIN------------ */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------------HEADER------------ */
+#HEADER {
+    margin-top: 40px;
+    min-height: 60vh;
+    max-height: 100vh;
+    height: 60vw;
+    background: url("./assets/B1.jpg") no-repeat;
+    background-size: 100vw;
+    background-position: top;
+}
+
+#headercontainer {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding-bottom: 100px;
+    color: #F9F5EC;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+}
+
+#headercontainer h1 {
+    font-size: 9.5vw;
+    text-transform: uppercase;
+}
+
+#subtitle {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 100%;
+}
+
+#subtitle div {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* ---------------ABOUT------------ */
+
+#ABOUT {
+    background-color: #181411;
+    color: #F9F5EC;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ABOUT .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    align-items: center;
+    padding: 10vw;
+    gap: 50px;
+}
+
+#ABOUT .container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    align-items: center;
+}
+
+#ABOUT .container2 h1 {
+    font-size: 8vw;
+    width: 50%;
+    line-height: 80%;
+}
+
+#ABOUT .container2 div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10vw;
+    gap: 50px;
+    font-size: 40px;
+    flex-wrap: wrap;
+}
+
+#ABOUT .container2 div p {
+    font-size: 1.7vw;
+    width: 13vw;
+    margin: 0 40px;
+}
+
+#ABOUT .container p {
+    width: 35vw;
+}
+
+#ABOUT img {
+    width: 40vw;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+#ABOUT .image-container {
+    overflow: visible;
+    margin-top: 200px;
+    height: 500px;
+}
+
+#ABOUT .image-wrapper2 {
+    position: relative;
+    bottom: 250px;
+    rotate: -3deg;
+}
+
+
+/* ---------------HOMES------------ */
+
+#HOMES h1 {
+    font-size: 60px;
+}
+
+#HOMES {
+    height: fit-content;
+    padding: 100px;
+    padding-bottom: 150px;
+    text-align: center;
+    background-color: rgb(156, 156, 151);
+}
+
+#HOMES-IMAGES {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: fit-content;
+}
+
+#HOMES-IMAGES figure {
+    position: relative;
+    width: 35vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.slider-container,
+.slider-container2 {
+    position: relative;
+    width: 35vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.mySlides,
+.mySlides2 {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 2s ease;
+}
+
+.image-container,
+.image-container2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-overlay,
+.image-overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 5px;
+    margin: 5%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.progress-bar,
+.progress-bar2 {
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    margin-left: 5%;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+    transform-origin: left;
+    transition: transform 0.7s ease, width 0.7s ease, left 0.7s ease
+}
+
+
+#HOMES-IMAGES figure figcaption {
+    margin-top: 10px;
+    text-align: left;
+    gap: 20px;
+    padding: 10px;
+}
+
+.arrow button {
+    background-color: rgb(1, 1, 1, 0.5);
+    color: rgb(254, 254, 254);
+    width: 30px;
+    height: 30px;
+    z-index: 100;
+    border: 0;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow {
+    position: relative;
+    bottom: 15vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+/* ---------------PROS------------ */
+
+#PROS {
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F5EC;
+    height: fit-content;
+    padding: 100px;
+    
+}
+
+#PROS>:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    text-align: center;
+}
+
+#quatro-vantagens {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: fit-content;
+    padding: 40px;
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    align-items: start;
+    padding-right: 13%;
+}
+
+#quatro-vantagens figcaption {
+    margin-top: 10px;
+    width: 24vw;
+}
+
+#quatro-vantagens figure div {
+    overflow: hidden;
+    width: 24vw;
+    height: 26vw;
+}
+
+#quatro-vantagens figure img {
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    width: 100%;
+    height: 100%;
+}
+
+#quatro-vantagens figure:hover img {
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}
+
+/* ---------------COMMUNITY------------ */
+
+#COMMUNITY {
+    display: flex;
+    flex-direction: column;
+    color: #181411;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+}
+
+#COMMUNITY .first {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    padding-top: 100px;
+    background-color: #c5d0dd;
+    margin-bottom: -40vw;
+}
+
+#COMMUNITY .first h1 {
+    font-size: 6vw;
+    line-height: 5vw;
+}
+
+#COMMUNITY .first>div {
+    padding: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+}
+
+#COMMUNITY .first>div p,
+button {
+    width: 300px;
+}
+
+#COMMUNITY .second {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 15%;
+    align-items: center;
+    justify-content: center;
+    background-color: #c5d0dd;
+    margin-top: -70vw;
+}
+
+#COMMUNITY .second h2 {
+    font-size: 4vw;
+    text-align: center;
+
+}
+
+#COMMUNITY .parallax-img {
+    width: 100%;
+    height: auto;
+    position: static;
+    z-index: -1;
+    padding: 40px;
+    background-color: #c5d0dd;
+}
+
+
+/* ---------------FOOTER/CONTACT------------ */
+
+#CONTACT {
+    padding: 2vw 2vw;
+    height: fit-content;
+    background-color: #181411;
+    color: #F9F5EC;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#CONTACT h1 {
+    font-size: 8vw;
+    line-height: 90%;
+}
+
+#footertitle {
+    margin-bottom: 160px;
+    width: 100%;
+}
+
+#footertitle h1 {
+    flex-wrap: wrap;
+    margin-left: 50%;
+}
+
+#line {
+    height: 2px;
+    background-color: #F9F5EC;
+    width: 95vw;
+}
+
+#line2 {
+    height: 1px;
+    background-color: #f9f5ec39;
+    width: 95vw;
+}
+
+#infoss {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+#infoss>div ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+    font-size: 100%;
+    text-transform: uppercase;
+}
+
+#infoss>div ul li a {
+    color: #F9F5EC;
+}
+
+#infoss>div ul li a:hover {
+    color: gray;
+}
+
+#CONTACT>:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* ---------------RESPONSIVINESS------------ */
+
+@media screen and (max-device-width: 1000px) and (min-device-width: 600px) {
+    #HEADER {
+        background-size: 65rem;
+        min-height: 42rem;
+    }
+
+    #HOMES-IMAGES {
+        margin-top: 60px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    #HOMES-IMAGES figure {
+        width: 80vw;
+        height: fit-content;
+    }
+
+    .seta {
+        bottom: 30vw;
+    }
+
+    #quatro-vantagens {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #quatro-vantagens figure div {
+        overflow: hidden;
+        width: 300px;
+        height: 300px;
+        display: flex;
+    }
+
+    #quatro-vantagens figure {
+        width: 300px;
+        padding: 0;
+    }
+
+    #PROS {
+        display: flex;
+        flex-direction: column;
+        background-color: #F9F5EC;
+        height: fit-content;
+        padding: 20px;
+    }
+}
+
+/* ---------------MOBILE------------ */
+@media (max-width : 600px) {
+    h1 {
+        font-size: 50px;
+        line-height: 15vw;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    header {
+        height: 60px;
+        width: 100%;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-ICON {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        width: fit-content;
+    }
+
+    .mobile-menu-ICON button {
+        border: none;
+        height: 59px;
+        padding-right: 10px;
+        width: fit-content;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        background-color: #112236;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-menu .nav-item {
+        display: flex;
+        width: 100%;
+        height: 15vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .open {
+        display: block;
+    }
+
+    #logo img {
+        height: 60px;
+        width: fit-content;
+    }
+
+    .main-container {
+        width: 100%;
+        min-width: 320px;
+    }
+
+    #HEADER {
+        margin-top: 3.5rem;
+        height: 100vw;
+        min-height: 160vw;
+        background-size: 250vw;
+        background-position: 20% 3%;
+        padding: 0;
+    }
+
+    #HEADER h1 {
+        font-size: 17.5vw;
+    }
+
+    #HEADER>div {
+        position: absolute;
+        top: 120vw;
+        width: 100%;
+        padding: 0;
+    }
+
+    #ABOUT {
+        background-color: #181411;
+        height: fit-content;
+        width: 100%;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    #ABOUT .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        gap: 50px;
+        padding-top: 100px;
+
+    }
+
+    #ABOUT .container h1 {
+        font-size: 2.5rem;
+    }
+
+    #ABOUT .container p {
+        width: 80%;
+        margin: 0;
+    }
+
+    #ABOUT img {
+        width: 60vw;
+        margin-bottom: -15vh;
+        margin-top: 10vh;
+        position: relative;
+    }
+
+    #ABOUT .image-wrapper2 {
+        bottom: 7vh;
+    }
+
+
+    #ABOUT .container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        text-align: center;
+        align-items: center;
+        margin-top: -200px;
+        padding-bottom: 50px;
+    }
+
+    #ABOUT .container2 h1 {
+        font-size: 10vw;
+        width: 90%;
+    }
+
+    #ABOUT .container2 div {
+        padding: 6vw;
+
+        gap: 50px;
+        font-size: 40px;
+        flex-wrap: wrap;
+    }
+
+    #ABOUT .container2 div p {
+        font-size: 4vw;
+        width: 30vw;
+        margin: 0 0;
+    }
+
+
+
+
+
+
+    #HOMES {
+        height: fit-content;
+        padding: 10px;
+        padding-top: 100px;
+        padding-bottom: 20px;
+        text-align: start;
+    }
+
+    #HOMES>div h1 {
+        text-align: start;
+        margin: 0 20px;
+        font-size: 3rem;
+    }
+
+    #HOMES-IMAGES {
+        margin-top: 60px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    #HOMES-IMAGES figure {
+        width: 80vw;
+        height: fit-content;
+    }
+
+    .arrow {
+        bottom: 30vw;
+    }
+
+    #PROS>div h1 {
+        text-align: start;
+        margin: 50px 20px;
+        font-size: 3rem;
+    }
+
+    #PROS {
+        padding: 10px;
+    }
+
+    #quatro-vantagens {
+        margin-top: 0;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        padding: 8%;
+    }
+
+    #quatro-vantagens figure div {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #quatro-vantagens figcaption {
+        width: 80vw;
+        height: fit-content;
+    }
+
+    #COMMUNITY {
+        display: flex;
+        flex-direction: column;
+        min-height: 140vh;
+
+    }
+
+    #COMMUNITY .first {
+        margin-bottom: -20vw;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #COMMUNITY .first div {
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 60px;
+    }
+
+    #COMMUNITY .first h1 {
+        font-size: 2rem;
+        line-height: 100%;
+        padding: 20px;
+    }
+
+    #COMMUNITY .second {
+        margin-top: -40vw;
+    }
+
+    #CONTACT {
+        margin-top: 0;
+        padding: 3vw 6vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    #line2,
+    #line {
+        width: 100%;
+    }
+
+    #CONTACT>:first-child {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #infoss {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+}
