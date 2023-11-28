@@ -441,7 +441,6 @@ main {
     background-color: #F9F5EC;
     height: fit-content;
     padding: 100px;
-    
 }
 
 #PROS>:first-child {
@@ -629,10 +628,50 @@ button {
 
 /* ---------------RESPONSIVINESS------------ */
 
-@media screen and (max-device-width: 1000px) and (min-device-width: 600px) {
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+
+    body {
+        margin: 0;
+        overflow-x: hidden;
+      }
+
+      nav>ul {
+        width: 70vw;
+    }
+
     #HEADER {
         background-size: 65rem;
-        min-height: 42rem;
+        height: 70vw;
+    }
+
+    #HEADER>div {
+        top: 55vw;
+    }
+
+    #ABOUT .container h1 {
+        line-height: 100%;
+    }
+
+    #ABOUT .image-wrapper2 {
+        bottom: 8vh;
+    }
+    
+    #ABOUT img {
+        margin-bottom: -35vh;
+        margin-top: 10vh;
+    }
+
+    #ABOUT .container2 {
+        margin-top: -200px;
+    }
+
+    #ABOUT .container {
+        margin-bottom: -20vw;
+    }
+
+    .image-container{
+        margin-bottom: 100px;
+        min-height: 100px;
     }
 
     #HOMES-IMAGES {
@@ -654,10 +693,17 @@ button {
         bottom: 30vw;
     }
 
+    #PROS>:first-child h1 {
+        font-size: 9vw;
+        line-height: 100%;
+    }
+
     #quatro-vantagens {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 20px;
+        margin: 0;
+        padding: 0;
     }
 
     #quatro-vantagens figure div {
@@ -672,17 +718,48 @@ button {
         padding: 0;
     }
 
+    #quatro-vantagens figcaption {
+        margin-top: 10px;
+        width: 60vw;
+    }
+    
+    #quatro-vantagens figure div {
+        width: 60vw;
+        height: 60vw;
+    }
+
     #PROS {
         display: flex;
         flex-direction: column;
-        background-color: #F9F5EC;
         height: fit-content;
+        padding: 20vw;
+    }
+
+    #PROS>div p {
+        margin: 10px 10px;
+    }
+
+    #COMMUNITY {
+        display: flex;
+        flex-direction: column;
+        min-height: 140vh;
+
+    }
+
+    #COMMUNITY .first {
+        margin-bottom: -20vw;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #COMMUNITY .first h1 {
+        line-height: 100%;
         padding: 20px;
     }
 }
 
 /* ---------------MOBILE------------ */
-@media (max-width : 600px) {
+@media (max-width : 500px) {
     body {
         margin: 0;
       }
