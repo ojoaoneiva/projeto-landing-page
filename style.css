@@ -337,7 +337,7 @@ main {
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 2vw;
     height: fit-content;
 }
 
@@ -457,14 +457,15 @@ main {
     height: fit-content;
     padding: 40px;
     display: flex;
-    gap: 120px;
+    gap: 10vw;
     justify-content: center;
     align-items: start;
     padding-right: 13%;
 }
 
 #quatro-vantagens figcaption {
-    margin-top: 10px;
+    margin-top: 20px;
+    gap: 10px;
     width: 24vw;
 }
 
@@ -506,7 +507,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding: 20px;
+    padding: 10vw;
     padding-top: 100px;
     background-color: #c5d0dd;
     margin-bottom: -40vw;
@@ -550,7 +551,7 @@ button {
     height: auto;
     position: static;
     z-index: -1;
-    padding: 40px;
+    padding: 6vw;
     background-color: #c5d0dd;
 }
 
@@ -628,7 +629,7 @@ button {
 
 /* ---------------RESPONSIVINESS------------ */
 
-@media screen and (max-width: 1000px) and (min-width: 500px) {
+@media screen and (max-width: 1000px) and (min-width: 501px) {
 
     body {
         margin: 0;
@@ -650,6 +651,7 @@ button {
 
     #ABOUT .container h1 {
         line-height: 100%;
+        font-size: 10vw;
     }
 
     #ABOUT .image-wrapper2 {
@@ -663,10 +665,17 @@ button {
 
     #ABOUT .container2 {
         margin-top: -200px;
+        
     }
 
     #ABOUT .container {
         margin-bottom: -20vw;
+    }
+
+    #ABOUT .container2 div p {
+        font-size-adjust: inherit;
+        font-size: 17px;
+        width: 17vw;
     }
 
     .image-container{
@@ -675,22 +684,33 @@ button {
     }
 
     #HOMES-IMAGES {
-        margin-top: 60px;
         margin-bottom: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 40px;
     }
 
     #HOMES-IMAGES figure {
-        width: 80vw;
-        height: fit-content;
+        max-width: 600px;
+        width: 60vw;
+        /* height: 70vw; */
+        padding-bottom: 15vw;
     }
 
-    .seta {
+    #HOMES-IMAGES figure figcaption {
+        position: absolute;
+        top: 45vw;
+        gap: 0;
+        padding: 0;
+        padding-top: 2vw;
+    }
+
+    .arrow {
         bottom: 30vw;
+    }
+    #arrow2 {
+        bottom: 15vw;
     }
 
     #PROS>:first-child h1 {
@@ -701,7 +721,7 @@ button {
     #quatro-vantagens {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 5vw;
         margin: 0;
         padding: 0;
     }
@@ -720,23 +740,23 @@ button {
 
     #quatro-vantagens figcaption {
         margin-top: 10px;
-        width: 60vw;
+        width: 50vw;
     }
     
     #quatro-vantagens figure div {
-        width: 60vw;
-        height: 60vw;
+        width: 50vw;
+        height: 50vw;
     }
 
     #PROS {
         display: flex;
         flex-direction: column;
         height: fit-content;
-        padding: 20vw;
+        padding: 25vw;
     }
 
     #PROS>div p {
-        margin: 10px 10px;
+        margin: 0;
     }
 
     #COMMUNITY {
